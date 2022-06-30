@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap");
+/* font-family: 'Barlow', sans-serif;
+font-family: 'Fraunces', serif; */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Fraunces", serif;
+}
+.big-pic {
+  background-image: url(./images/desktop/image-header.jpg);
+  background-size: cover;
+  background-position: center bottom;
+  height: 60vh;
+  position: relative;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+nav ul li {
+  padding: 0 20px;
+  font-size: 17px;
+  color: white;
+  font-family: "Fraunces", serif;
+}
+.big-pic h1 {
+  font-size: 50px;
+  font-family: "Fraunces", serif;
+  text-transform: uppercase;
+  color: white;
+  margin: 0;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  letter-spacing: 0.5rem;
+}
+/* End Big-pic */
+/* Start galary   */
+
+.galary {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "L1 R1"
+    "L2 R2"
+    "L3 R3";
+  height: 130vh;
+  color: hsl(167, 40%, 24%);
+}
+.brand-L1 {
+  grid-area: L1;
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: "Fraunces", serif;
+}
+.brand-L1 h2 {
+  font-size: 40px;
+}
+.brand-L1 p {
+  line-height: 2rem;
+  font-size: 20px;
+}
+.brand-L1 a {
+  font-size: 25px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.brand-R1 {
+  grid-area: R1;
+  background: url(./images/desktop/image-transform.jpg) no-repeat center center;
+  background-size: cover;
+}
+.audianc-L2 {
+  grid-area: L2;
+  background: url(./images/desktop/image-stand-out.jpg) no-repeat center center;
+  background-size: cover;
+}
+.audianc-R2 {
+  grid-area: R2;
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: "Fraunces", serif;
+}
+.audianc-R2 h2 {
+  font-size: 40px;
+}
+.audianc-R2 p {
+  line-height: 2rem;
+  font-size: 20px;
+}
+.audianc-R2 a {
+  font-size: 25px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.graphic-L3 {
+  grid-area: L3;
+  background: url(./images/desktop/image-graphic-design.jpg) no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.photography-R3 {
+  grid-area: R3;
+  background: url(./images/desktop/image-photography.jpg) no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.graphic-L3 .small-container,
+.photography-R3 .small-container {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.graphic-L3 .small-container h2,
+.photography-R3 .small-container h2 {
+  font-size: 30px;
+}
+.graphic-L3 .small-container p,
+.photography-R3 .small-container p {
+  padding-top: 20px;
+  line-height: 2rem;
+}
+/* End  galary  */
+/* Start Testmonial   */
+.testemonial {
+  height: 60vh;
+  padding: 10rem;
+  text-align: center;
+}
+.testemonial h1 {
+  font-size: 20x;
+  padding-bottom: 40px;
+  opacity: 0.4;
+  text-transform: uppercase;
+  letter-spacing: 0.7rem;
+}
+.testemonial .people {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.testemonial .people .Left,
+.testemonial .people .Mid,
+.testemonial .people .Right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  height: 100%;
+}
+.testemonial .people .Left img,
+.testemonial .people .Mid img,
+.testemonial .people .Right img {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  text-align: center;
+  align-self: center;
+}
+.testemonial .people .Left p,
+.testemonial .people .Mid p,
+.testemonial .people .Right p {
+  font-size:12px;
+}
+/* End  Testmonial  */
+/* Start Pic   */
+.pic-container {
+  height: 35vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: "LL LR RL RR";
+}
+.pic-container .LL {
+  grid-area: LL;
+  background-image: url(./images/desktop/image-gallery-milkbottles.jpg);
+  background-size: cover;
+}
+.pic-container .LR {
+  grid-area: LR;
+  background-image: url(./images/desktop/image-gallery-orange.jpg);
+  background-size: cover;
+}
+.pic-container .RL {
+  grid-area: RL;
+  background-image: url(./images/desktop/image-gallery-cone.jpg);
+  background-size: cover;
+}
+.pic-container .RR {
+  grid-area: RR;
+  background-image: url(./images/desktop/image-gallery-sugarcubes.jpg);
+  background-size: cover;
+}
+/* End  Testmonial  */
+/* Start Pic   */
+footer {
+  background-color: #8ad0c3;
+  margin: 0 auto;
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: hsl(168, 34%, 41%);
+}
+footer ul {
+  list-style: none;
+  display: flex;
+  text-align: center;
+  padding: 30px;
+}
+footer ul li {
+  padding: 0 10px;
+}
